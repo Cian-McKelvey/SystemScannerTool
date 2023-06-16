@@ -23,7 +23,7 @@ class TestAlgorithms(unittest.TestCase):
         )
 
     # Searching for an item that isn't present so -1 should be the correct response
-    def test_unfound_binary_searhc(self):
+    def test_unfound_binary_search(self):
         self.assertEqual(
             binary_search(unsorted, 6),
             -1

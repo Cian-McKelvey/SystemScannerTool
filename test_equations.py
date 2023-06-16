@@ -5,7 +5,7 @@ value_list = [5,5,5,5,5]
 
 
 # Working correctly, again, just need to change structure
-class TestAlgorithms(unittest.TestCase):
+class TestEquations(unittest.TestCase):
 
     def test_val_average(self):
         self.assertEqual(
