@@ -16,7 +16,7 @@ class Plotter:
         self.yaxis_name = yaxis_name
         self.title = title
 
-    # Second graph won't show until first is closed
+    # Bug Here, explained in bug.txt
     def plot_graph(self):
         plt.plot(self.list_obj)
         plt.xlabel(self.xaxis_name)
