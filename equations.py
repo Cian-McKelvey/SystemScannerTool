@@ -11,12 +11,11 @@ def val_average(arr):
     return total / count
 
 
-def is_cpu_over_max_usage(arr, value):
+def is_over_max_usage(arr, value):
     for item in arr:
         if item > value:
             return True
     return False
-
 
 
 def find_ram_as_percentage(total, available):

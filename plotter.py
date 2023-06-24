@@ -1,6 +1,10 @@
 import matplotlib.pyplot as plt
 
 
+def show_graphs():
+    plt.show()
+
+
 class Plotter:
 
     def __new__(cls, *args, **kwargs):
@@ -12,9 +16,10 @@ class Plotter:
         self.yaxis_name = yaxis_name
         self.title = title
 
+    # Second graph won't show until first is closed
     def plot_graph(self):
         plt.plot(self.list_obj)
         plt.xlabel(self.xaxis_name)
         plt.ylabel(self.yaxis_name)
         plt.title(self.title)
-        plt.show()
+        plt.figure()
