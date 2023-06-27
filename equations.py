@@ -18,5 +18,23 @@ def is_over_max_usage(arr, value):
     return False
 
 
+# This is probably overly-complex, dont think its needed and can just use the equation in the method below
+def is_over(x, y):
+    if x > y:
+        return True
+    else:
+        return False
+
+
+def percentage_dif(x, y):
+    results = is_over(x, y)
+    if results is True:
+        ans = (x - y)
+    else:
+        ans = (y - x)
+
+    return ans
+
+
 def find_ram_as_percentage(total, available):
     return (total - available) / total * 100
