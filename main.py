@@ -14,9 +14,6 @@ def main():
     cpu_usage_percent_list = []
     ram_usage_percent_list = []
 
-    previous_cpu_percent_list = read_from_file("output_files/cpu_results.csv")
-    previous_ram_percent_list = read_from_file("output_files/ram_results.csv")
-
     print("Running a system diagnosis, please hold.\n")
 
     while index <= SYSTEM_TEST_RUNTIME:
@@ -45,8 +42,6 @@ def main():
 
     lowest_cpu = find_lowest_value(cpu_usage_percent_list)
     highest_cpu = find_highest_value(cpu_usage_percent_list)
-    lowest_cpu_previous = find_lowest_value(previous_cpu_percent_list)
-    highest_cpu_previous = find_highest_value(previous_cpu_percent_list)
 
     lowest_ram = find_lowest_value(ram_usage_percent_list)
     highest_ram = find_highest_value(ram_usage_percent_list)
@@ -54,10 +49,12 @@ def main():
     print("\n")
     print(f"You had a maximum CPU usage of {highest_cpu}% and the lowest was {lowest_cpu}%")
     print(f"This gives a range of {int(highest_cpu - lowest_cpu)}% (rounded to the nearest whole number))")
-    print(f"The previous run had a highest of {highest_cpu_previous} and a low of {lowest_cpu_previous}")
+
+    # Here
+
     print(f"Your current highest is ")  # Create method to check if higher or lower, and the percentage difference
     print("\n")
-    print(f"You had a maximum CPU usage of {highest_ram}% and the lowest was {lowest_ram}%")
+    print(f"You had a maximum RAM usage of {highest_ram}% and the lowest was {lowest_ram}%")
     print(f"This gives a range of {int(highest_ram - lowest_ram)}% (rounded to the nearest whole number))")
 
     # Plotting cpu usage to a graph using a created plotter object defined in plotter.py
