@@ -1,5 +1,5 @@
 import unittest
-from equations import val_average
+from system_scanner.equations import val_average
 
 value_list = [5,5,5,5,5]
 

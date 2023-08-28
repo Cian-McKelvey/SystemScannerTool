@@ -1,5 +1,5 @@
 import unittest
-from algorithms import bubblesort, find_highest_value, find_lowest_value, binary_search
+from system_scanner.algorithms import bubblesort, find_highest_value, find_lowest_value, binary_search
 
 
 unsorted = [3, 1, 2, 5, 4]
