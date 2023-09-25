@@ -46,12 +46,12 @@ def main():
     lowest_ram = find_lowest_value(ram_usage_percent_list)
     highest_ram = find_highest_value(ram_usage_percent_list)
 
+    # Change to make it one long string which is then outputted
     print("\n")
     print(f"You had a maximum CPU usage of {highest_cpu}% and the lowest was {lowest_cpu}%")
     print(f"This gives a range of {int(highest_cpu - lowest_cpu)}% (rounded to the nearest whole number))")
 
-    # Here
-
+    # Change to make it one long string which is then outputted
     print(f"Your current highest is ")  # Create method to check if higher or lower, and the percentage difference
     print("\n")
     print(f"You had a maximum RAM usage of {highest_ram}% and the lowest was {lowest_ram}%")

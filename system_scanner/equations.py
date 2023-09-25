@@ -18,7 +18,7 @@ def is_over_max_usage(arr, value):
     return False
 
 
-# This is probably overly-complex, dont think its needed and can just use the equation in the method below
+# This is probably overly-complex, don't think its needed and can just use the equation in the method below
 def is_over(x, y):
     if x > y:
         return True
